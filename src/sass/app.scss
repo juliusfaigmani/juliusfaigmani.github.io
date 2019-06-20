@@ -1,0 +1,14 @@
+$primary: #ede7f6;
+
+.center{
+	text-align: center;
+}
+
+body{
+	background: $primary;
+}
+
+.container{
+	border:#000 solid 1px;
+	@extend .center;
+}

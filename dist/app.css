@@ -1,0 +1,8 @@
+.center, .container {
+  text-align: center; }
+
+body {
+  background: #ede7f6; }
+
+.container {
+  border: #000 solid 1px; }
