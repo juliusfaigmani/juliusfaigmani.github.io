@@ -1,14 +1,10 @@
-$primary: #ede7f6;
+@import "component/fonts";
 
-.center{
-	text-align: center;
-}
-
-body{
-	background: $primary;
-}
-
-.container{
-	border:#000 solid 1px;
-	@extend .center;
-}
+@import "component/color";
+@import "component/variable";
+@import "component/extends";
+@import "component/global";
+@import "component/profile";
+@import "component/main";
+@import "component/snakeline";
+@import "component/footer";

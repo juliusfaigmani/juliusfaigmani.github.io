@@ -1,0 +1,41 @@
+body{
+	font-family: 'Montserrat', sans-serif;
+}
+
+.profile{
+	border: #000 solid 0;
+	width: 400px;
+	position: fixed;
+	height: 100vh;
+	min-height: 700px;
+	left: 0;
+	top: 0;
+	background: $blue;
+	color: $white;
+}
+main{
+	padding: 0 15px 0 415px;
+}
+
+// 992px and Down
+@media only screen and (max-width: 992px) {
+	.profile{
+		width: 100%;
+		position: static;
+		height: 280px;
+		min-height: 0;
+	}
+
+	main{
+		padding: 0 15px 0 15px;
+	}
+}
+
+
+//600px and Down
+@media only screen and (max-width: 600px) {
+	.profile{
+		position: static;
+		height: 250px;
+	}
+}

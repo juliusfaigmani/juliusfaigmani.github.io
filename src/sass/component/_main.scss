@@ -1,0 +1,89 @@
+main{
+	& .slogan{
+		display: none;
+	}
+	& .stack{
+		margin-top: 25px;
+		padding: 15px 0.75rem;
+		& img{
+			filter: grayscale(100%);
+			width: 70px;
+			margin: 15px 5px;
+			&:hover{
+				filter: grayscale(0%);
+			}
+		}
+	}
+}
+
+
+// 992px and Down
+@media only screen and (max-width: 992px) {
+	main{
+		& .slogan{
+			display: block;
+			text-align: center;
+			padding: 50px 0;
+			position: relative;
+			margin-top: 50px;
+			& p{
+				width: 80%;
+				max-width: 550px;
+				margin: 0 auto;
+				font-size: 22px;
+				font-weight: 400;
+			}
+			&:before{
+				color: $blue;
+				font-family:"Material Design Icons";
+				content: '\f756';
+				font-size: 150px;
+				position: absolute;
+				left: 0;
+				top: 0;
+				line-height: 100px;
+				opacity: 0.5;
+				
+			}
+		}
+		& .stack{
+			text-align: center;
+			& img{
+				width: 90px;
+			}
+		}
+	}
+}
+
+
+//600px and Down
+@media only screen and (max-width: 600px) {
+	main{
+		& .slogan{
+			padding: 50px 0;
+			margin-top: 20px;
+			& p{
+				width: 90%;
+				max-width: 550px;
+				margin: 0 auto;
+				font-size: 18px;
+				font-weight: 400;
+			}
+			&:before{
+				font-size: 130px;
+			}
+		}
+	}
+}
+
+//600px and Down
+@media only screen and (max-width: 460px) {
+	main{
+		& .stack{
+			text-align: center;
+			& img{
+				width: 70px;
+			}
+		}
+	}
+}

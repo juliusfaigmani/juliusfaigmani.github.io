@@ -1,0 +1,36 @@
+.smNav{
+	background-color: $blue-accent-4;
+	line-height: 30px;
+	& .row{
+		margin-bottom: 0;
+		font-size: 13px;
+		color: $white;
+		& i.mdi{
+			font-size: 18px;
+			color: $white;
+			line-height: 30px;
+			margin: 0 5px;
+		}
+	}
+}
+nav{
+	background-color: $blue;
+	box-shadow: none;
+	& li{
+		& a{
+			&:hover{
+				background: none;
+			}
+		}
+	}
+}
+// 992px and Down
+@media only screen and (max-width: 992px) {
+	
+}
+
+
+//600px and Down
+@media only screen and (max-width: 600px) {
+	
+}

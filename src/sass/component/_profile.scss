@@ -1,0 +1,173 @@
+.profile{
+	& .bg{
+		height: 300px;
+		width: 400px;
+		position: relative;
+		background: $white;
+		&:before{
+			content: '';
+			display: block;
+			width: 0;
+			height: 0;
+			position: absolute;
+			bottom: 0;
+			border-right: $blue solid 400px;
+			border-top: rgba(255,255,255,0.0) solid 200px;
+			right: 0;
+			z-index: 2;
+		}
+		&:after{
+			content: "";
+			position: absolute;
+			z-index: 1;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			background: #fff url('../../images/bg.svg');
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center center;
+			opacity: 0.3;
+		}
+		& .avatar{
+			width: 200px;
+			height: 200px;
+			border: $white solid 5px;
+			position: absolute;
+			z-index: 3;
+			bottom: 20px;
+			left: 100px;
+			background: #fff;
+			border-radius: 50%;
+			overflow: hidden;
+			& img{
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+		}
+	}
+	& h1{
+		text-align: center;
+		font-size: 36px;
+		margin: 5px 0;
+		font-weight: 700;
+	}
+	& .role{
+		text-align: center;
+		text-transform: uppercase;
+		font-size: 13px;
+	}
+	& .slogan{
+		margin-top: 40px;
+		text-align: center;
+		padding: 30px 0.75rem 0 0.75rem;
+		font-size: 18px;
+		font-weight: 500;
+		position: relative;
+		padding-left: 15px;
+		&:before{
+			font-family:"Material Design Icons";
+			content: '\f756';
+			font-size: 150px;
+			position: absolute;
+			left: 0;
+			top: 0;
+			line-height: 76px;
+			opacity: 0.4;
+		}
+	}
+	& .copy{
+		text-align: right;
+		font-size: 13px;
+		padding: 15px 0.75rem;
+		position: absolute;
+		bottom: 0.75rem;
+		width: 100%;
+	}
+}
+// 992px and Down
+@media only screen and (max-width: 992px) {
+	.profile{
+		& .bg{
+			display: block;
+			height: 280px;
+			width: 100% !important;
+			&:before{
+				content: '';
+				display: block;
+				width: 0;
+				height: 0;
+				position: absolute;
+				bottom: 0;
+				border-right: $blue solid 280px;
+				border-top: rgba(255,255,255,0.0) solid 280px;
+				right: 0;
+				z-index: 2;
+			}
+			&:after{
+				content: "";
+				position: absolute;
+				z-index: 1;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				left: 0;
+				background-size: 50%;
+				background-repeat: no-repeat;
+				background-position: left top;
+				opacity: 0.3;
+			}
+			& .avatar{
+				width: 150px;
+				height: 150px;
+				z-index: 3;
+				top: 25px;
+				left: 50%;
+				margin-left: -75px;
+				border: $blue solid 5px;
+			}
+		}
+		& .info{
+			position: absolute;
+			left: 0;
+			right: 0;
+			top: 170px;
+			z-index: 999;
+			color: $black;
+			text-shadow: 0px 0px 3px rgba(255,255,255,0.66);
+		}
+		& .slogan,
+		& .copy{
+			display: none;
+		}
+	}
+}
+
+
+//600px and Down
+@media only screen and (max-width: 600px) {
+	.profile{
+		& .bg{
+			height: 250px;
+			&:before{
+				border-right: $blue solid 250px;
+				border-top: rgba(255,255,255,0.0) solid 250px;
+			}
+			& .avatar{
+				width: 120px;
+				height: 120px;
+				z-index: 3;
+				top: 15px;
+				margin-left: -60px;
+			}
+		}
+		& .info{
+			top: 140px;
+			& h1{
+				font-size: 30px;
+			}
+		}
+	}
+}
